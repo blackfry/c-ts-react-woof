@@ -38,7 +38,7 @@ module.exports = {
     };
     const readme = fs.readFileSync('README.md', 'utf-8');
 
-    let exampleTitle = 'cba-ts-react-woof';
+    let exampleTitle = 'c-ts-react-woof';
 
     renderer.heading = function headingProxy(text, level, raw) {
       if (level === 1 && !exampleTitle) {

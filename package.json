@@ -1,16 +1,18 @@
 {
-  "name": "cba-ts-react-woof",
+  "name": "c-ts-react-woof",
   "version": "1.0.0",
   "engines": {
-    "node": "8.9.4"
+    "node": "8.11.1"
   },
   "dependencies": {
     "@types/react": "^16.3.14",
     "@types/react-dom": "^16.0.5",
     "babel-preset-env": "^1.7.0",
+    "now": "^11.1.11",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-hot-loader": "^4.1.3"
+    "react-hot-loader": "^4.1.3",
+    "webpack": "^4.8.3"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
@@ -23,14 +25,17 @@
     "marked": "^0.3.19",
     "mini-css-extract-plugin": "^0.4.0",
     "typescript": "^2.8.3",
-    "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3",
     "webpack-dev-server": "^3.1.4"
   },
+  "now": {
+    "name": "c-woof"
+  },
   "scripts": {
     "webpack": "./node_modules/.bin/webpack",
-    "server": "node server.js",
-    "start": "webpack-dev-server --open",
-    "build": "webpack -p --progress"
+    "dev": "webpack-dev-server --open",
+    "build": "webpack -p --progress",
+    "start": "webpack -p --progress",
+    "deploy": "now -e NODE_ENV=production --token $NOW_TOKEN --npm"
   }
 }
