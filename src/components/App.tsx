@@ -4,7 +4,7 @@ interface AppProps {
     message: string,
 };
 const App = ({ message }: AppProps ) => {
-    return <h1>Hello {message}</h1>;
+    return <h1>Whats up {message}!</h1>;
 };
 
 export default hot(module)(App)

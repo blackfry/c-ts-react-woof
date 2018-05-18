@@ -1,8 +1,20 @@
 language: node_js
+
 node_js:
 - "8.11.1"
+
 cache: npm
-script: npm run deploy
+
+before_deploy:
+  script:
+    now rm c-woof
+
+jobs:
+  include:
+    - stage: deploy
+      skip_cleanup: true
+      script: npm run deploy
+
 env:
   global:
     secure: B+FIrxTl6tMDh5o6dqN7sJLTxw+gUxgpi38vo9SfaCXDeRcwLV3WXRRYK+t/PxSCSCqpP+WoQ2fsFK3HQR62rx8z7V+IUNMVpKEUTro0KciXTeOx8UUV6Puk9jvQZpZoBSEfIBNaH2GsZsnynv+Nm249aFeENfxN8F6yyhTGvBlmwOsKNFrM73SgHt6AkkvL8/hBbPYS9ZTLmgS7Czhd2eSEBeg4EQTp2EU7F7stZhcP8Pi5GNt6JQb3aYV5kjdlwLMlWvuQotTos12XUrRpkAJAGfpYivdlOGg1bs/spszrTuUhyxeogUtU5gTvLuZBAqNOi+tveXdxOdv0g6l8ZIbfPagmAdUPVi8sWagKY8TdX0COt/ulL5a03tVf8jmiOUbfGM6RCY9HedKDNY5WYgRhTSa0uvciXki/DFKx3IzgjuYasYJQGT6OfzEOfUUXxFdG4zGukMHo8KEpbV+ZSXoWG+hX9mYCkKV2OMDe/Nyl4hIi2vnYb99XdLRKhsx50Vl0xkVJzWNxrcaXnH5wr2EL7D3aHO4cuAYAlZq+EzdlvM28MnC0LyKuEAVmHmGNo3AqpHTgIcRJSxw1W66S93OjNDF9YL3K8OpRp0raGRs+8yWdoYKk4twGLhxrkSeEO2bKxGp52UrThqEVO7ARXYc4XllOO0KdP9U81dEBwY4=

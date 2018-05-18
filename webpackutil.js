@@ -69,8 +69,6 @@ module.exports = {
       result.devServer.before = before;
     }
 
-    // result.output = { path: path.dirname(module.parent.filename) };
-    console.log('xxxxx result', {result});
     return result;
   }
 };
