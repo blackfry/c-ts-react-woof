@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import ImageList from './ImageList';
 
 const props = {
-  message: 'ImageList component',
+  images: ['https://random.dog/2ee86ac3-9bc3-49bb-998d-1bb7a1a913e9.jpg'],
 };
 
 describe('ImageList', () => {

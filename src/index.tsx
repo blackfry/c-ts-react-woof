@@ -2,4 +2,4 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './components/App';
 
-ReactDOM.render(<App message="World"/>, document.getElementById('target'));
+ReactDOM.render(<App />, document.getElementById('target'));

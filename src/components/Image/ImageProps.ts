@@ -1,3 +1,3 @@
 export interface IImageProps {
-  message: string;
+  image: string;
 }

@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import Image from './Image';
 
 const props = {
-  message: 'Image component',
+  image: 'Image component',
 };
 
 describe('Image', () => {

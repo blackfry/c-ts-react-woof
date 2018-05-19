@@ -1,8 +1,13 @@
 import * as React from 'react';
 import { IImageProps } from './ImageProps';
+import './image.scss';
 
-const Image = ({ message }: IImageProps) => {
-  return <h1>{`Image ${message}`}</h1>;
+const Image = ({ image }: IImageProps) => {
+  return (
+    <div>
+      <img src={image} className="image" />
+    </div>
+  );
 };
 
 export default Image;

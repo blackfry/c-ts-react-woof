@@ -1,3 +1,3 @@
 export interface IImageListProps {
-  message: string;
+  images: string[];
 }
