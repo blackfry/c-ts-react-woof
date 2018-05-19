@@ -1,0 +1,16 @@
+exports["should render default component(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "h1",
+    "props": {
+      "children": "Image Image component"
+    },
+    "rendered": "Image Image component"
+  },
+  "type": "h1",
+  "props": {},
+  "children": [
+    "Image Image component"
+  ]
+};
+
