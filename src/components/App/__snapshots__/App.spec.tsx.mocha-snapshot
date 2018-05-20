@@ -1,0 +1,95 @@
+exports["should render default component(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "app",
+      "children": [
+        {
+          "type": "Header",
+          "props": {
+            "handleFetchImages": "[function]"
+          },
+          "_store": {}
+        },
+        false,
+        {
+          "type": "ImageList",
+          "props": {
+            "images": []
+          },
+          "_store": {}
+        },
+        {
+          "type": "Footer",
+          "props": {},
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "function",
+        "type": "Header",
+        "props": {
+          "handleFetchImages": "[function]"
+        }
+      },
+      false,
+      {
+        "nodeType": "class",
+        "type": "ImageList",
+        "props": {
+          "images": []
+        }
+      },
+      {
+        "nodeType": "function",
+        "type": "Footer",
+        "props": {}
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "app"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "function",
+        "type": "Header",
+        "props": {
+          "handleFetchImages": "[function]"
+        }
+      },
+      "type": "Header",
+      "props": {
+        "handleFetchImages": "[function]"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "ImageList",
+        "props": {
+          "images": []
+        }
+      },
+      "type": "ImageList",
+      "props": {
+        "images": []
+      }
+    },
+    {
+      "node": {
+        "nodeType": "function",
+        "type": "Footer",
+        "props": {}
+      },
+      "type": "Footer",
+      "props": {}
+    }
+  ]
+};
+

@@ -11,9 +11,11 @@
     "@babel/plugin-syntax-typescript": "^7.0.0-beta.46",
     "@types/chai": "^4.1.3",
     "@types/enzyme": "^3.1.10",
+    "@types/lodash": "^4.14.109",
     "@types/mocha": "^5.2.0",
     "@types/react": "^16.3.14",
     "@types/react-dom": "^16.0.5",
+    "@types/sinon": "^4.3.3",
     "awesome-typescript-loader": "^5.0.0",
     "axios": "^0.18.0",
     "babel-loader": "^8.0.0-beta.2",
@@ -22,8 +24,10 @@
     "chai-enzyme": "^0.8.0",
     "cross-env": "^5.1.5",
     "css-loader": "^0.28.11",
+    "css-modules-require-hook": "^4.2.3",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "3.0.7",
     "ignore-styles": "^5.0.1",
     "jsdom": "^11.10.0",
@@ -50,6 +54,7 @@
     "tslint": "^5.10.0",
     "tslint-config-airbnb": "^5.8.0",
     "typescript": "^2.8.3",
+    "typings-for-css-modules-loader": "^1.7.0",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3"
   },
@@ -60,11 +65,11 @@
     "name": "c-woof"
   },
   "scripts": {
-    "prod": "run-s rimraf dist && webpack -p --progress --env production",
-    "now-start": "run-s prod && serve --single ./dist",
+    "prod": "webpack -p --progress --env production",
+    "now-start": "run-s prod && serve --single ./dist -p 8081",
     "dev": "webpack-dev-server --open",
-    "deploy": "now --public -e NODE_ENV=production --token $NOW_TOKEN --npm --no-verify",
+    "deploy": "now -e NODE_ENV=production --token $NOW_TOKEN --npm --no-verify",
     "lint": "tslint -c tslint.json 'src/**/*.ts*'",
-    "test": "cross-env NODE_ENV=TEST && mocha -r ts-node/register -r ./config/test.config.js -r mocha-snapshots \"src/**/*.spec.ts*\""
+    "test": "cross-env NODE_ENV=TEST && node $(npm bin)/mocha -r ts-node/register -r ./config/test.config.js -r mocha-snapshots \"src/**/*.spec.ts*\""
   }
 }

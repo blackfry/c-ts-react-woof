@@ -1,26 +1,22 @@
-/* tslint:disable:no-empty-interface */
 import * as React from 'react';
-
 import './Header.scss';
 
-export interface IHeaderProps {}
+export interface IHeaderProps {
+  handleFetchImages: () => void;
+}
 
-export interface IHeaderState {}
-
-class Header extends React.Component<IHeaderProps, IHeaderState> {
-  constructor(props: IHeaderProps) {
-    super(props);
-  }
-
-  public render() {
-    return (
-      <div className="header pure-g">
-        <div className="pure-u-1">
-          <a className="pure-button pure-button-primary" href="#">Show More Dogs</a>
+const Header = ({ handleFetchImages }: IHeaderProps) => {
+  return (
+    <div className="header">
+      <div className="pure-u-1">
+        <div
+          className="pure-button pure-button-primary"
+          onClick={() => handleFetchImages()}>
+          Show More Dogs
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Header;

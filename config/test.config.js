@@ -2,7 +2,15 @@
 const { JSDOM } = require('jsdom');
 const enzyme = require('enzyme');
 const Adapter = require('enzyme-adapter-react-16');
-require('ignore-styles').default(['.sass', '.scss']);
+require('ignore-styles').default(['.scss']);
+const hook = require('css-modules-require-hook');
+const sass = require('node-sass');
+
+hook({
+    extensions: [ '.scss' ],
+    generateScopedName: '[name]__[local]___[hash:base64:5]',
+    preprocessCss: data => sass.renderSync({ data }).css
+})
 
 function testConfig() {
   const jsdom = new JSDOM('<!doctype html><html><body></body></html>');

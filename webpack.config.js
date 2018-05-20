@@ -18,7 +18,7 @@ module.exports = [
           use: ['awesome-typescript-loader', 'babel-loader'],
         },
         {
-          test: /\.(css|sass|scss)$/,
+          test: /\.(sass|scss)$/,
           use: [
             'style-loader',
             'css-loader',
