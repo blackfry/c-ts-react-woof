@@ -72,5 +72,9 @@
     "lint": "tslint -c tslint.json 'src/**/*.ts*'",
     "test": "cross-env NODE_ENV=TEST && node $(npm bin)/mocha -r ts-node/register -r ./config/test.config.js -r mocha-snapshots \"src/**/*.spec.ts*\"",
     "deploy": "now -e NODE_ENV=production --token $NOW_TOKEN --npm --no-verify"
-  }
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ]
 }
