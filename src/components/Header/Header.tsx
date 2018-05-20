@@ -10,6 +10,7 @@ const Header = ({ handleFetchImages }: IHeaderProps) => {
     <div className="header">
       <div className="pure-u-1">
         <div
+          id="button"
           className="pure-button pure-button-primary"
           onClick={() => handleFetchImages()}>
           Show More Dogs

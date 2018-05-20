@@ -1,0 +1,98 @@
+exports["should render default component(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "footer",
+      "children": [
+        {
+          "type": "a",
+          "props": {
+            "href": "https://www.linkedin.com/in/mark-dickie-1bb23b17/",
+            "target": "_blank",
+            "children": "Linkedin | "
+          },
+          "_store": {}
+        },
+        {
+          "type": "a",
+          "props": {
+            "href": "https://github.com/blackfry/c-ts-react-woof",
+            "target": "_blank",
+            "children": "Source Code"
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "host",
+        "type": "a",
+        "props": {
+          "href": "https://www.linkedin.com/in/mark-dickie-1bb23b17/",
+          "target": "_blank",
+          "children": "Linkedin | "
+        },
+        "rendered": "Linkedin | "
+      },
+      {
+        "nodeType": "host",
+        "type": "a",
+        "props": {
+          "href": "https://github.com/blackfry/c-ts-react-woof",
+          "target": "_blank",
+          "children": "Source Code"
+        },
+        "rendered": "Source Code"
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "footer"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "a",
+        "props": {
+          "href": "https://www.linkedin.com/in/mark-dickie-1bb23b17/",
+          "target": "_blank",
+          "children": "Linkedin | "
+        },
+        "rendered": "Linkedin | "
+      },
+      "type": "a",
+      "props": {
+        "href": "https://www.linkedin.com/in/mark-dickie-1bb23b17/",
+        "target": "_blank"
+      },
+      "children": [
+        "Linkedin | "
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "a",
+        "props": {
+          "href": "https://github.com/blackfry/c-ts-react-woof",
+          "target": "_blank",
+          "children": "Source Code"
+        },
+        "rendered": "Source Code"
+      },
+      "type": "a",
+      "props": {
+        "href": "https://github.com/blackfry/c-ts-react-woof",
+        "target": "_blank"
+      },
+      "children": [
+        "Source Code"
+      ]
+    }
+  ]
+};
+

@@ -1,0 +1,97 @@
+exports["should render default component(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "error",
+      "children": {
+        "type": "div",
+        "props": {
+          "className": "error",
+          "children": {
+            "type": "h3",
+            "props": {
+              "children": "error page message"
+            },
+            "_store": {}
+          }
+        },
+        "_store": {}
+      }
+    },
+    "rendered": {
+      "nodeType": "host",
+      "type": "div",
+      "props": {
+        "className": "error",
+        "children": {
+          "type": "h3",
+          "props": {
+            "children": "error page message"
+          },
+          "_store": {}
+        }
+      },
+      "rendered": {
+        "nodeType": "host",
+        "type": "h3",
+        "props": {
+          "children": "error page message"
+        },
+        "rendered": "error page message"
+      }
+    }
+  },
+  "type": "div",
+  "props": {
+    "className": "error"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "error",
+          "children": {
+            "type": "h3",
+            "props": {
+              "children": "error page message"
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "h3",
+          "props": {
+            "children": "error page message"
+          },
+          "rendered": "error page message"
+        }
+      },
+      "type": "div",
+      "props": {
+        "className": "error"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "h3",
+            "props": {
+              "children": "error page message"
+            },
+            "rendered": "error page message"
+          },
+          "type": "h3",
+          "props": {},
+          "children": [
+            "error page message"
+          ]
+        }
+      ]
+    }
+  ]
+};
+

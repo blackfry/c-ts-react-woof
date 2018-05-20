@@ -1,13 +1,12 @@
 import * as React from 'react';
 import { expect } from 'chai';
-import { shallow, mount } from 'enzyme';
-import { spy, stub, SinonStub } from 'sinon';
-import App from './App';
+import { shallow } from 'enzyme';
+import Footer from './Footer';
 
-describe('App', () => {
+describe('Footer', () => {
   it('should render default component', () => {
     const wrapper = shallow(
-      <App />);
+      <Footer/>);
     expect(wrapper).to.matchSnapshot();
   });
 });

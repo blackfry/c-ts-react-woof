@@ -1,13 +1,16 @@
 import * as React from 'react';
 import { expect } from 'chai';
-import { shallow, mount } from 'enzyme';
-import { spy, stub, SinonStub } from 'sinon';
-import App from './App';
+import { shallow } from 'enzyme';
+import ErrorPage from './ErrorPage';
 
-describe('App', () => {
+const props = {
+  message: 'error page message',
+};
+
+describe('ErrorPage', () => {
   it('should render default component', () => {
     const wrapper = shallow(
-      <App />);
+      <ErrorPage {...props} />);
     expect(wrapper).to.matchSnapshot();
   });
 });

@@ -1,0 +1,247 @@
+exports["should render default component(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "loader",
+      "children": {
+        "type": "div",
+        "props": {
+          "className": "sk",
+          "children": [
+            {
+              "type": "div",
+              "props": {
+                "className": "sk sk"
+              },
+              "_store": {}
+            },
+            {
+              "type": "div",
+              "props": {
+                "className": "sk sk"
+              },
+              "_store": {}
+            },
+            {
+              "type": "div",
+              "props": {
+                "className": "sk sk"
+              },
+              "_store": {}
+            },
+            {
+              "type": "div",
+              "props": {
+                "className": "sk sk"
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "_store": {}
+      }
+    },
+    "rendered": {
+      "nodeType": "host",
+      "type": "div",
+      "props": {
+        "className": "sk",
+        "children": [
+          {
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            },
+            "_store": {}
+          },
+          {
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            },
+            "_store": {}
+          },
+          {
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            },
+            "_store": {}
+          },
+          {
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            },
+            "_store": {}
+          }
+        ]
+      },
+      "rendered": [
+        {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "className": "sk sk"
+          }
+        },
+        {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "className": "sk sk"
+          }
+        },
+        {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "className": "sk sk"
+          }
+        },
+        {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "className": "sk sk"
+          }
+        }
+      ]
+    }
+  },
+  "type": "div",
+  "props": {
+    "className": "loader"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "sk",
+          "children": [
+            {
+              "type": "div",
+              "props": {
+                "className": "sk sk"
+              },
+              "_store": {}
+            },
+            {
+              "type": "div",
+              "props": {
+                "className": "sk sk"
+              },
+              "_store": {}
+            },
+            {
+              "type": "div",
+              "props": {
+                "className": "sk sk"
+              },
+              "_store": {}
+            },
+            {
+              "type": "div",
+              "props": {
+                "className": "sk sk"
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            }
+          }
+        ]
+      },
+      "type": "div",
+      "props": {
+        "className": "sk"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            }
+          },
+          "type": "div",
+          "props": {
+            "className": "sk sk"
+          }
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            }
+          },
+          "type": "div",
+          "props": {
+            "className": "sk sk"
+          }
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            }
+          },
+          "type": "div",
+          "props": {
+            "className": "sk sk"
+          }
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "sk sk"
+            }
+          },
+          "type": "div",
+          "props": {
+            "className": "sk sk"
+          }
+        }
+      ]
+    }
+  ]
+};
+

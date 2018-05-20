@@ -1,0 +1,119 @@
+exports["should render default component(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "header",
+      "children": {
+        "type": "div",
+        "props": {
+          "className": "pure",
+          "children": {
+            "type": "div",
+            "props": {
+              "id": "button",
+              "className": "pure pure",
+              "onClick": "onClick",
+              "children": "Show More Dogs"
+            },
+            "_store": {}
+          }
+        },
+        "_store": {}
+      }
+    },
+    "rendered": {
+      "nodeType": "host",
+      "type": "div",
+      "props": {
+        "className": "pure",
+        "children": {
+          "type": "div",
+          "props": {
+            "id": "button",
+            "className": "pure pure",
+            "onClick": "onClick",
+            "children": "Show More Dogs"
+          },
+          "_store": {}
+        }
+      },
+      "rendered": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "id": "button",
+          "className": "pure pure",
+          "onClick": "onClick",
+          "children": "Show More Dogs"
+        },
+        "rendered": "Show More Dogs"
+      }
+    }
+  },
+  "type": "div",
+  "props": {
+    "className": "header"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "pure",
+          "children": {
+            "type": "div",
+            "props": {
+              "id": "button",
+              "className": "pure pure",
+              "onClick": "onClick",
+              "children": "Show More Dogs"
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "id": "button",
+            "className": "pure pure",
+            "onClick": "onClick",
+            "children": "Show More Dogs"
+          },
+          "rendered": "Show More Dogs"
+        }
+      },
+      "type": "div",
+      "props": {
+        "className": "pure"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "id": "button",
+              "className": "pure pure",
+              "onClick": "onClick",
+              "children": "Show More Dogs"
+            },
+            "rendered": "Show More Dogs"
+          },
+          "type": "div",
+          "props": {
+            "id": "button",
+            "className": "pure pure",
+            "onClick": "onClick"
+          },
+          "children": [
+            "Show More Dogs"
+          ]
+        }
+      ]
+    }
+  ]
+};
+
