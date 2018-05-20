@@ -36,6 +36,7 @@
     "node-sass": "^4.9.0",
     "now": "^11.1.11",
     "npm-run-all": "^4.1.3",
+    "purecss": "^1.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-hot-loader": "^4.1.3",
@@ -63,7 +64,7 @@
     "now-start": "run-s prod && serve --single ./dist",
     "dev": "webpack-dev-server --open",
     "deploy": "now --public -e NODE_ENV=production --token $NOW_TOKEN --npm --no-verify",
-    "tslint": "tslint -c tslint.json 'src/**/*.ts*'",
+    "lint": "tslint -c tslint.json 'src/**/*.ts*'",
     "test": "cross-env NODE_ENV=TEST && mocha -r ts-node/register -r ./config/test.config.js -r mocha-snapshots \"src/**/*.spec.ts*\""
   }
 }

@@ -1,5 +1,5 @@
 /* tslint:disable:no-empty-interface */
-import React from 'react';
+import * as React from 'react';
 
 import './Footer.scss';
 
@@ -15,7 +15,12 @@ class Footer extends React.Component<IFooterProps, IFooterState> {
   public render() {
     return (
       <div className="footer">
-        Component name: Footer
+        <a href="https://www.linkedin.com/in/mark-dickie-1bb23b17/"  target="_blank">
+          {`Mark Dickie   |   `}
+        </a>
+        <a href="https://github.com/blackfry/c-ts-react-woof" target="_blank">
+          Source Code
+        </a>
       </div>
     );
   }

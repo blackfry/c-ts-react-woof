@@ -1,12 +1,10 @@
 {
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
-        "jsx": "react",
-        "lib": ["es5", "es6", "dom"],
-        "module": "ESNext",
         "noImplicitAny": true,
-        "moduleResolution": "node",
         "sourceMap": true,
+        "jsx": "react",
         "target": "es5",
+        "lib": ["es5", "es6", "dom"],
     } 
 }

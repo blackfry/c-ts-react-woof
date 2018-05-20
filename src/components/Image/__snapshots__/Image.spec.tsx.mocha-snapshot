@@ -1,16 +1,55 @@
 exports["should render default component(0)"] = {
   "node": {
     "nodeType": "host",
-    "type": "h1",
+    "type": "div",
     "props": {
-      "children": "Image Image component"
+      "className": "pure pure image",
+      "children": {
+        "type": "div",
+        "props": {
+          "className": "image",
+          "style": {
+            "backgroundImage": "url(Image component)"
+          }
+        },
+        "_store": {}
+      }
     },
-    "rendered": "Image Image component"
+    "rendered": {
+      "nodeType": "host",
+      "type": "div",
+      "props": {
+        "className": "image",
+        "style": {
+          "backgroundImage": "url(Image component)"
+        }
+      }
+    }
   },
-  "type": "h1",
-  "props": {},
+  "type": "div",
+  "props": {
+    "className": "pure pure image"
+  },
   "children": [
-    "Image Image component"
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "image",
+          "style": {
+            "backgroundImage": "url(Image component)"
+          }
+        }
+      },
+      "type": "div",
+      "props": {
+        "className": "image",
+        "style": {
+          "backgroundImage": "url(Image component)"
+        }
+      }
+    }
   ]
 };
 
